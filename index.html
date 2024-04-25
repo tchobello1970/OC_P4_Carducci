@@ -5,10 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Nina Carducci - Photographe à Bordeaux</title>
 	<meta name="description" content="Nina Carducci, photographe professionnelle à Bordeaux, je réalise Shooting, retouches et Albums Photo pour les événements importants de votre vie, de votre entreprise.">
+	<meta name="robots" content="index, follow">
 	<meta name="google-site-verification" content="2TwXYduvC7B57L34jusR6PZwI29DLX57roatx8iNuTY">
-	<span itemscope itemprop="address" itemtype="http://schema.org/PostalAddress">
-		<meta itemprop="addressLocality" content="Bordeaux">
-	</span>	
 	
 	<meta property="og:site_name" content="Nina Carducci Photographe">
     <meta property="og:type" content="website">
@@ -33,6 +31,29 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/maugallery.js"></script>
 	<script src="./assets/scripts.js"></script>
+
+	<script type="application/ld+json">
+		{
+		  "@context": "http://schema.org",
+		  "@type": "ImageGallery",
+          "keywords": ["Concert", "Entreprise", "Mariage", "Portrait"],
+		  "@type": "Person",
+		  "name": "Nina Carducci",
+		  "jobTitle": "Photographe",
+		  "address": {
+			"@type": "PostalAddress",
+			"streetAddress": "68, avenue Alsace-Lorraine",
+			"postalCode": "33200",
+			"addressLocality": "Bordeaux",
+			"addressRegion": "Occitanie"
+		  },
+		  "telephone": "05 56 67 78 89",
+		  "@type": "Service",
+		  "serviceType": ["Shooting photo", "Retouches", "Albums Photo"]
+		}
+	</script>
+
+
 </head>
 <body>
 <header class="top-header">
@@ -88,13 +109,9 @@
 			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 	</div>
 </section>
-<section id="gallery" itemscope itemtype="http://schema.org/ImageGallery">
+<section id="gallery">
 	<h2 class="title">Portfolio</h2>
 	<div class="container py-3">
-		<meta itemprop="keywords" content="Concert">
-		<meta itemprop="keywords" content="Entreprise">
-		<meta itemprop="keywords" content="Mariage">
-		<meta itemprop="keywords" content="Portrait">
 		<div class="gallery" style="display: none">
 			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="salle de concerts">
 
@@ -186,19 +203,19 @@
 </article>
 </main>
 <footer>
-	<div itemscope itemtype="http://schema.org/Person">
-		<div class="foot-name" itemprop="name">Nina Carducci</div>
-		<span itemprop="jobTitle" content="Photographe">Photographe</span>
-		<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-		    <span itemprop="streetAddress">68, avenue Alsace-Lorraine</span>
-		    <span itemprop="postalCode">33200</span>
-		    <span itemprop="addressLocality">Bordeaux</span>
-		    <span itemprop="addressRegion"> Occitanie</span>
-		</div>
-		<div itemprop="telephone">05 56 67 78 89</div>
-		<div>du lundi au vendredi de 10h à 19h</div>
-
+	<div class="foot-name">Nina Carducci</div>
+	<span>Photographe</span>
+	<div>
+		<span>68, avenue Alsace-Lorraine</span>
+		<span>33200</span>
+		<span>Bordeaux</span>
+		<span> Occitanie</span>
 	</div>
+	<div>05 56 67 78 89</div>
+	<div>du lundi au vendredi de 10h à 19h</div>
 </footer>
 </body>
 </html>
+
+
+
