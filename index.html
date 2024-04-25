@@ -35,23 +35,31 @@
 	<script type="application/ld+json">
 		{
 		  "@context": "http://schema.org",
-		  "@type": "ImageGallery",
-          "keywords": ["Concert", "Entreprise", "Mariage", "Portrait"],
-		  "@type": "Person",
-		  "name": "Nina Carducci",
-		  "jobTitle": "Photographe",
-		  "address": {
-			"@type": "PostalAddress",
-			"streetAddress": "68, avenue Alsace-Lorraine",
-			"postalCode": "33200",
-			"addressLocality": "Bordeaux",
-			"addressRegion": "Occitanie"
-		  },
-		  "telephone": "05 56 67 78 89",
-		  "@type": "Service",
-		  "serviceType": ["Shooting photo", "Retouches", "Albums Photo"]
+		  "@graph": [
+			{
+			  "@type": "ImageGallery",
+			  "keywords": ["Concert", "Entreprise", "Mariage", "Portrait"]
+			},
+			{
+			  "@type": "Person",
+			  "name": "Nina Carducci",
+			  "jobTitle": "Photographe",
+			  "address": {
+				"@type": "PostalAddress",
+				"streetAddress": "68, avenue Alsace-Lorraine",
+				"postalCode": "33200",
+				"addressLocality": "Bordeaux",
+				"addressRegion": "Occitanie"
+			  },
+			  "telephone": "05 56 67 78 89"
+			},
+			{
+			  "@type": "Service",
+			  "serviceType": ["Shooting photo", "Retouches", "Albums Photo"]
+			}
+		  ]
 		}
-	</script>
+		</script>
 
 
 </head>
